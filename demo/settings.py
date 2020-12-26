@@ -25,7 +25,7 @@ SECRET_KEY = 'b5na&cp25gkfiuv31cn0tj!@5q*(8imhzt0-rrlkr1$^&!e)ev'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -75,25 +75,25 @@ WSGI_APPLICATION = 'demo.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-      'default': {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+#       'default': {
 
-              'ENGINE': 'django.db.backends.mysql',
+#               'ENGINE': 'django.db.backends.mysql',
 
-              'NAME': 'deepak',
+#               'NAME': 'deepak',
 
-              'USER': 'deepak@deepakmysql',
+#               'USER': 'deepak@deepakmysql',
 
-              'PASSWORD': 'Kumar@1234',
+#               'PASSWORD': 'Kumar@1234',
 
-              'HOST': 'deepakmysql.mysql.database.azure.com',
+#               'HOST': 'deepakmysql.mysql.database.azure.com',
 
-              'PORT': '',
+#               'PORT': '',
 
-          }
+#           }
 }
 
 
